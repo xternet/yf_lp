@@ -1,4 +1,80 @@
 import BigNumber from 'bignumber.js/bignumber'
+//SETTINGS Rinkeby Testnet (B4 uncomment, comment for BSC)
+
+export const CHAIN_ID = 4
+
+export const contractAddresses = {
+  sushi: {
+    4: '0x382C270e34999ab119d54d6E1644A32D8801F928',
+  },
+  masterChef: {
+    4: '0x8deE0EAf6db1f59EfF6416FDD9a4Aef3Df492cb1',
+  },
+  weth: {
+    4: '0xc778417e063141139fce010982780140aa0cd5ab',
+  },
+  xSushi: {
+    4: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
+  }
+}
+
+export const supportedPools = [
+  {
+    pid: 0,
+    lpAddresses: {
+      4: '0x03e6c12ef405ac3f642b9184eded8e1322de1a9e', // LP Token Address
+    },
+    tokenAddresses: {
+      4: '0x5592ec0cfb4dbc12d3ab100b257153436a1f0fea', // Token, i.e. "DAI"
+    },
+    name: 'DAI-ETH LP',
+    symbol: 'DAI-ETH LP',
+    tokenSymbol: 'DAI',
+    icon: '💸',
+  },
+]
+
+
+// //SETTINGS BSC Testnet (B4 uncomment, comment for Rinkeby)
+
+// export const CHAIN_ID = 97
+
+// export const contractAddresses = {
+//   sushi: {
+//     97: '0x9859ec67684323eba65ce57006666ff6619dd1f8',
+//   },
+//   masterChef: {
+//     97: '0x450630e2D498A9f663832f783063DFA7B66Cf05E',
+//   },
+//   weth: {
+//     97: '0xc778417e063141139fce010982780140aa0cd5ab',
+//   },
+//   xSushi: {
+//     97: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
+//   }
+// }
+
+// export const supportedPools = [
+//   {
+//     pid: 0,
+//     lpAddresses: {
+//       97: '0x715df581ea082a42bA90721837f49EA98D45680F', // LP Token Address
+//     },
+//     tokenAddresses: {
+//       97: '0xf0B6f9AFb8cC55C725cf4887d176654de219F914', // Token1
+//       97: '0x9734897F919490182a64f2B97479ef53b221441C', // Token2
+//     },
+//     name: 'Token1-Token2 LP',
+//     symbol: 'TKN1-TKN2 LP',
+//     tokenSymbol: 'TKN',
+//     icon: '💸',
+//   },
+// ]
+
+
+
+
+
 
 export const SUBTRACT_GAS_LIMIT = 100000
 
@@ -37,6 +113,7 @@ export const addressMap = {
   LEND: '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
   SUSHIYCRV: '0x2C7a51A357d5739C5C74Bf3C96816849d2c9F726',
 }
+
 
 // export const contractAddresses = {
 //   sushi: {
@@ -451,46 +528,3 @@ SLP Address on mainnet for reference
 //    icon: '👨🏻‍🍳',
 //  },
 // ]
-
-
-
-
-
-// DAPP SETTINGS
-
-export const CHAIN_ID = 4
-
-export const contractAddresses = {
-  sushi: {
-    4: '0xF982ce12b4Ab81706567b10BF23A1325F63D6d4E',
-  },
-  masterChef: {
-    4: '0xf137DF8c57c3D397760d199E462C324be118444A',
-  },
-  weth: {
-    4: '0xc778417e063141139fce010982780140aa0cd5ab',
-  },
-  xSushi: {
-    4: '0x8798249c2e607446efb7ad49ec89dd1865ff4272' // NOTE: Not in use
-  }
-}
-
-
-
-export const supportedPools = [
-  {
-    pid: 0,
-    lpAddresses: {
-      4: '0x03e6c12ef405ac3f642b9184eded8e1322de1a9e', // LP Token Address
-    },
-    tokenAddresses: {
-      4: '0x5592ec0cfb4dbc12d3ab100b257153436a1f0fea', // Token, i.e. "DAI"
-    },
-    name: 'DAI-ETH LP',
-    symbol: 'DAI-ETH LP',
-    tokenSymbol: 'DAI',
-    icon: '💸',
-  },
-]
-
-

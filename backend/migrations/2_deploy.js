@@ -26,6 +26,10 @@ module.exports = async function(deployer) {
     process.env.LP_TOKEN_ADDRESS,
     false
   )
+  
+  console.log('In frontend/src/sushi/lib/constants.js scroll to CHAIN_ID 4 (if deployed on Rinkeby) or CHAIN_ID 97 (if deployed on bsc_testnet)')
+  console.log(`\nPaste this ${sushiToken.address} into contractAddresses/sushi`)
+  console.log(`\nPaste this ${masterChef.address} into contractAddresses/masterChef`)
 
   // Add more liquidity pools here upon deployment, or add them later manually
 }
