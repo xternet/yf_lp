@@ -26,11 +26,9 @@
 
 ## 📃 Instructions to deploy on BSC
 0. **Get Test BNB [link](https://testnet.binance.org/faucet-smart)**
-1. **Compile Contracts**
-</br>```truffle compile```
-2. **Create&Add liquidity pool on PancakeSwap**
+1. **Create&Add liquidity pool on PancakeSwap**
 </br>```truffle exec scripts/create_lp.js --network bsc_testnet```
 </br>```...and then follow log instructions```
-3. **Migrate Contracts to BSC**
+2. **Migrate Contracts to BSC**
 </br>```truffle migrate --reset --network bsc_testnet```
 </br>```...and then follow log instructions```
