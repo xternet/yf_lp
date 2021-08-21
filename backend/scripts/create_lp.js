@@ -20,7 +20,7 @@ module.exports = async done => {
 
     console.log('Creating liquidity...')
     const pairAddress = await factory.createPair.call(token1.address, token2.address);
-    const tx = await factory.createPair(token1.address, token2.address);
+    await factory.createPair(token1.address, token2.address);
 
     console.log('Adding liquidity...')
     await token1.approve(router.address, amount);
